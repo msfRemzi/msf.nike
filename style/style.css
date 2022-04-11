@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.container {
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: red;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #544294, #D47300);
+    border-radius: 20px;
+}
+
+
+body {
+    font-family: 'RR';
+    background: #cac9c9;
+}
+
+nav {
+    background: #322E41;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul a {
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding: 23px 14px;
+    display: block;
+    transition: 300ms;
+}
+header nav ul a:hover {
+    background: #FFFFFF;
+    color: #D57300;
+}
+
+header {
+    height: 565px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-content {
+    background: url(../images/headerbg.jpg) no-repeat center /cover;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header-content h1 {
+    font-size: 50px;
+    line-height: 59px;
+    color: #FFFFFF;
+    font-family: 'RB';
+    margin-bottom: 15px;
+}
+.header-content p {
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+.header-content span {
+    font-family: 'RB';
+}
+.main-left,
+.main-right {
+    max-width: 540px;
+    width: 100%;
+}
+
+.main-left {
+    background: #FFFFFF;
+    border-radius: 6px;
+    padding: 15px;
+}
+.main-left h2 {
+    font-size: 22px;
+    line-height: 26px;
+    color: #2C2A2A;
+    font-family: 'RB';
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.main-left img {
+    width: 100%;
+}
+
+
+.main-left p {
+    font-size: 16px;
+    line-height: 19px;
+    color: #9B9B9B;
+}
+.main-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+.main-right-item {
+    background: #FFFFFF;
+    border-radius: 6px;
+    max-width: 255px;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-right-item h2 {
+    font-size: 22px;
+    color: #2C2A2A;
+    font-family: 'RB';
+    margin: 12px 0;
+}
+.main-right-item p {
+    font-size: 16px;
+    color: #9B9B9B;
+}
+.main-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item{
+    margin-bottom: 30px;
+}
+
+
+footer {
+    background: #322E41;
+    padding-top: 37px;
+    padding-bottom: 57px;
+}
+
+.footer-left {
+    max-width: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.footer-left input {
+    font-size: 18px;
+    line-height: 18px;
+    color: #9B9B9B;
+    background: #FFFFFF;
+    border-radius: 6px;
+    padding: 8px;
+}
+.footer-left textarea{
+    resize: none;
+    font-size: 18px;
+    line-height: 18px;
+    color: #9B9B9B;
+    background: #FFFFFF;
+    border-radius: 6px;
+    height: 86px;
+    padding: 8px;
+    margin: 10px 0;
+}
+.footer-btn {
+    background: #544294;
+    border-radius: 6px; 
+    font-size: 16px;
+    line-height: 13px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 5px 0;
+}
+
+input:focus {
+    outline: none;
+}
+textarea:focus {
+    outline: none;
+}
+
+.footer-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-right {
+    display: flex;
+}
+
+.footer-right ul a {
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    display: block;
+}
+.footer-right ul a:hover {
+    color: #D47300;
+}
+.footer-list {
+    margin-right: 68px;
+}
+
+
+@media (max-width:1140px) {
+    .main-box {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 40px;
+    }
+}
+@media(max-width: 800px) {
+    .header-top {
+        flex-direction: column;
+    }
+    nav {
+        padding: 15px 0;
+    }
+    .header-top ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .footer-box {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-right-item {
+        max-width: none;
+    }
+    .item {
+        margin: 0;
+    }
+    .main-right {
+        row-gap: 30px;
+    }
+}
